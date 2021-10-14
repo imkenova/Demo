@@ -7,7 +7,7 @@ function App() {
 
     let currentDate = new Date()
     let lastAppUpdate = localStorage['lastAppUpdate'] == null ? JSON.parse('[]') : JSON.parse(localStorage['lastAppUpdate'])
-    if (lastAppUpdate.length == 0 || lastAppUpdate[2] != currentDate.getFullYear() || lastAppUpdate[1] != currentDate.getMonth() || lastAppUpdate[0] != currentDate.getDate()){
+    if (lastAppUpdate.length === 0 || lastAppUpdate[2] !== currentDate.getFullYear() || lastAppUpdate[1] !== currentDate.getMonth() || lastAppUpdate[0] !== currentDate.getDate()){
         let newDate = []
         newDate.push(currentDate.getDate())
         newDate.push(currentDate.getMonth())

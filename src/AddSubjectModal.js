@@ -9,7 +9,7 @@ function AddSubjectModal(props) {
 
     function addSubject(e) {
         e.stopPropagation()
-        if (name.replace(/ /g, '').length != 0 && JSON.parse(localStorage['subjects']).indexOf(name) == -1) {
+        if (name.replace(/ /g, '').length !== 0 && JSON.parse(localStorage['subjects']).indexOf(name) === -1) {
             localStorage['subjects'] = JSON.stringify(JSON.parse(localStorage['subjects']).concat(name))
             props.changeVisibility(false)
             editErrorMsg('')
@@ -28,7 +28,7 @@ function AddSubjectModal(props) {
     }
 
     function keyPress(e){
-        if (e.key == "Enter"){
+        if (e.key === "Enter"){
             addSubject(e)
         }
     }
