@@ -1,6 +1,5 @@
 import "./ContextMenu.css"
 import Fade from "react-reveal/Fade";
-import {createRef} from "react";
 
 function ContextMenu(props) {
 
@@ -19,7 +18,7 @@ function ContextMenu(props) {
         props.editSelectedSubject(-1)
 
         let extraction = JSON.parse(localStorage['posts'])
-        extraction = extraction.filter((p) => parseInt(p[0]) != parseInt(props.subject))
+        extraction = extraction.filter((p) => parseInt(p[0]) !== parseInt(props.subject))
         localStorage['posts'] = JSON.stringify(extraction)
 
         extraction = JSON.parse(localStorage['subjects'])

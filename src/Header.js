@@ -1,5 +1,4 @@
 import "./Header.css"
-import {changeLog} from "./changelog"
 import Slide from 'react-reveal/Slide'
 import {memo} from "react";
 
@@ -7,8 +6,6 @@ function Header() {
 
     let randomInfo = ['version', 'subjects', 'posts']
     let userNotification
-
-    let showNow = randomInfo[Math.floor(Math.random() * randomInfo.length)]
 
    
 
