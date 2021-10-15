@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1634317657239" clover="3.2.0">
+  <project timestamp="1634317657239" name="All files">
+    <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="1" elements="27" coveredelements="19" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="App.js" path="/Users/lena_imkenova/Documents/GitHub/Demo/src/App.js">
+      <metrics statements="15" coveredstatements="14" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="1"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="1" type="cond" truecount="2" falsecount="4"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="19" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

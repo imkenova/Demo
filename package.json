@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/Post.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.1"
   }
 }
