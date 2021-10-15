@@ -7,5 +7,3 @@ script:
 - npm test
 - npm run build
 
-after_success:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
