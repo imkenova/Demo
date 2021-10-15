@@ -5,5 +5,8 @@ node_js:
 
 script:
 - npm test
-- npm test-coveralls
 - npm run build
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
