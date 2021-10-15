@@ -5,4 +5,5 @@ node_js:
 
 script:
 - npm test
+- npm test-coveralls
 - npm run build
