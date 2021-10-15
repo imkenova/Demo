@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "CI=true react-scripts test --coverage --collectCoverageFrom=!src/Post.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
